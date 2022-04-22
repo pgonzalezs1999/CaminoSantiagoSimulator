@@ -1,3 +1,15 @@
+:root
+{
+    --fondo: #F6F6F6;
+    --nuestroAzul: #0D74B4;
+    --nuestroAmarillo: #FFFFAA;
+}
+
+header, body, footer
+{
+    text-align: center;
+}
+
 h1, p, button, a
 {
     font-family: 'Baloo Bhaijaan 2', cursive;
@@ -11,4 +23,25 @@ h1, p, button, a
 .listaVertical
 {
     display: block;
+}
+
+.logoGrande
+{
+    width: 60vw;
+    height: auto;
+}
+
+button
+{
+    width: 160px;
+    height: 35px;
+    background-color: var(--nuestroAzul);
+    color: var(--nuestroAmarillo);
+    border-radius: 5px;
+}
+
+button a
+{
+    color: var(--nuestroAmarillo);
+    text-decoration: none;
 }
