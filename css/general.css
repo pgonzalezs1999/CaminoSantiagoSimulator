@@ -1,0 +1,14 @@
+h1, p, button, a
+{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.listaVertical
+{
+    display: block;
+}
