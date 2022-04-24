@@ -1,11 +1,22 @@
 .logoLogin
 {
-    margin-top: 20vw;
-    margin-bottom: 20vw;
+    margin-top: 15vw;
+    margin-bottom: 15vw;
 }
 
 .opcionesLogin
 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 0px;
+    right: 0%;
+    left: 0%;
+    margin-bottom: 20px;
 }
