@@ -3,6 +3,8 @@
     --fondo: #F6F6F6;
     --nuestroAzul: #0D74B4;
     --nuestroAmarillo: #FFFFAA;
+    --colorNavegacion: #FFFFAA;
+    --sombras: rgb(0, 0, 0, 0.25);
 }
 
 header, body, footer
@@ -65,4 +67,60 @@ button a
 .scroll
 {
     overflow: auto;
+}
+
+.tarjetaSitio
+{
+    display: flex;
+    width: 90vw;
+    box-shadow: 0 6px 12px var(--sombras), 0 4px 4px var(--sombras);
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.imagenSitio
+{
+    width: 25vw;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.infoSitio
+{
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.infoSitio p
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.infoSitio img
+{
+    width: 20vw;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.navegacion
+{
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    background-color: var(--colorNavegacion);
+}
+
+.navegacion div
+{
+    flex: 1;
+    height: 40px;
 }
