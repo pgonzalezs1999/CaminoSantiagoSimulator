@@ -1,0 +1,51 @@
+.fotoPrincipal
+{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.sobreImagenes
+{
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+}
+
+.volver
+{
+    left: 20px;
+    z-index: 1;
+}
+
+.favorito
+{
+    right: 20px;
+    z-index: 1;
+}
+
+.suavizadoNombre
+{
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 70vh;
+    width: 100%;
+}
+
+.suavizadoNombre p
+{
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.flexInfo
+{
+    display: flex;
+}
+
+.flexInfo p
+{
+    padding-left: 30px;
+}
