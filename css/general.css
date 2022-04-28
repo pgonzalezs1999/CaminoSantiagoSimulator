@@ -3,7 +3,6 @@
     --fondo: #F6F6F6;
     --nuestroAzul: #0D74B4;
     --nuestroAmarillo: #FFFFAA;
-    --colorNavegacion: #FFFFAA;
     --sombras: rgb(0, 0, 0, 0.25);
 }
 
@@ -117,7 +116,7 @@ button a
     position: fixed;
     bottom: 0px;
     width: 100vw;
-    background-color: var(--colorNavegacion);
+    background-color: var(--nuestroAmarillo);
 }
 
 .opcionNav
@@ -131,4 +130,10 @@ button a
 {
     height: 25px;
     padding-top: 6%;
+}
+
+.margenInferior
+{
+    height: 40px;
+    width: auto;
 }
