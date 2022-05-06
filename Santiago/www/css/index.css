@@ -1,0 +1,29 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.enlace
+{
+    background-color: aqua;
+    text-decoration: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+.logoIndex
+{
+    width: 70vw;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+h1
+{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 50px;
+    text-align: center;
+}
