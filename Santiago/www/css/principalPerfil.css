@@ -3,14 +3,37 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+    width: 75%;
+    margin: 0 auto;
+    padding: 5%;
+    padding-top: 10%;
+    justify-content: bottom;
 }
 .logoPerfil{
-    width: 25vw;
+    width: 17vw;
     height: auto;
-    grid-column: 1 / 2;
-    grid-row: 1;
 }
 .botonesFunc{
-    grid-column: 3;
+    grid-column: 3/6;
     grid-row: 1;
+    text-align: left;
  }
+
+ .infoUser{
+    display: grid;
+    grid-template-columns: 65% auto;
+    justify-content: stretch;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5%;
+    padding-bottom: 10%;
+ }
+ 
+ .fotoPerfil img
+{
+    max-width: 30vw;
+    border-radius: 50%;
+}
+.datos{
+    text-align: left;
+}
