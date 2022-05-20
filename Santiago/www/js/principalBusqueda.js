@@ -1,3 +1,11 @@
+let miRequest = new XMLHttpRequest();
+miRequest.open("GET", "bd.json");
+miRequest.onload = function()
+{
+    console.log(miRequest.responseText);
+};
+miRequest.send();
+
 long = 42.876;
 lat = -8.544;
 var map = L.map('map').setView([long, lat], 12);

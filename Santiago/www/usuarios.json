@@ -1,0 +1,43 @@
+{
+"usuarios":[
+    {
+        "foto":"images/Ana.jpg",
+        
+        "name":"Ana del Valle", 
+
+        "shortname":"Ana", 
+
+        "dir":"UEM", 
+
+        "bio":" Profesora UEM, fotógrafa y madre de 2 dragones." ,
+        
+        "url": "https://www.linkedin.com/in/anacorralesp/"
+    },
+    {
+        "foto":"images/sir-tim-berners-lee.jpg",
+        
+        "name": "Tim Berners Lee", 
+
+        "shortname": "Timmy", 
+
+        "dir":"W3C", 
+
+        "bio":"Padre de la World Wide Web." ,
+        
+        "url": "https://twitter.com/timberners_lee"
+    },
+    {
+        "foto":"images/Tony-Stark.jpg",
+        
+        "name": "Tony Stark", 
+
+        "shortname": "Iron Man", 
+
+        "dir":"Marvel", 
+
+        "bio":"Genio, multimillonario, playboy, filántropo." ,
+        
+        "url": "https://twitter.com/Iron_Man"
+    }
+]
+}
