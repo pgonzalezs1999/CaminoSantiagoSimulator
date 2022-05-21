@@ -1,11 +1,3 @@
-let miRequest = new XMLHttpRequest();
-miRequest.open("GET", "bd.json");
-miRequest.onload = function()
-{
-    console.log(miRequest.responseText);
-};
-miRequest.send();
-
 long = 42.876;
 lat = -8.544;
 var map = L.map('map').setView([long, lat], 12);
@@ -38,3 +30,22 @@ m4.addTo(map);
 let m5 = L.marker([long + 0.06, lat + 0.06]);
 m5.bindPopup(L.popup({maxWidth:500}).setContent("Mirador Praias do Mar"));
 m5.addTo(map);
+
+$(document).ready(function() {
+    $.getJSON('lugares.json', function(lugares) {
+        var output ="";
+        lista = lugares.lugares;
+        $.each(lista, function(key, val) {
+            output += '<a href="albergueInicio.html" class="tarjetaSitio">';
+            output += '<img class="imagenSitio" src="img/' + val.foto + '" alt="Imagen del sitio">'; 
+            output += '<div class="infoSitio">'; 
+            output +='<p>' + val.nombre + '</p>'; 
+            output +='<p>' + val.ubicacion + '</p>';
+            output +='<img src="img/valoracion.png" alt="Valoración">';
+            output +='</div>';
+            output +='</a>';
+        });
+        output += '<div class="margenInferior"></div>';
+        $('body').append(output);
+    });
+});
