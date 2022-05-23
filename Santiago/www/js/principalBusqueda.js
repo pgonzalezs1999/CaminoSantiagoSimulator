@@ -33,6 +33,28 @@ m5.addTo(map);
 
 $(document).ready(function() {
     $.getJSON('lugares.json', function(lugares) {
+        let resultado = JSON.stringify(lugares);
+        resultado += ',' +
+            '{' +
+            '"id":6,' +
+            '"nombre":"aaaaaaaaaaaaaaaaa",' +
+            '"ubicacion":"aaaaaaaaaaaaaaaaaa",' +
+            '"foto":"mirador02.jpg",' +
+            '"fecha_reserva":"aaaaaaaaaaa",' +
+            '"favorito":1,' +
+            '"reservado":1' +
+            '}';
+        
+        let myJSON = JSON.stringify(resultado);
+        localStorage.setItem("lugares", myJSON);
+
+        console.log(myJSON);
+    });
+});
+
+$(document).ready(function() {
+    $.getJSON('lugares.json', function(lugares) {
+        texto = lugares;
         var output ="";
         lista = lugares.lugares;
         $.each(lista, function(key, val) {
