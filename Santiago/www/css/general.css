@@ -34,7 +34,7 @@ h1, .formDiv, p, button, a
     height: auto;
 }
 
-button
+button, .botonGeneral
 {
     width: 160px;
     height: 35px;
