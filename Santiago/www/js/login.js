@@ -32,3 +32,16 @@ function getCookie(cname) {
   }
   return "";
 }
+
+function validar(){
+  var user = document.getElementById("fname").value;
+  var pass = document.getElementById("lname").value;
+  if(user == "miUser" && pass == "miPass"){
+    alert("¡Bienvenido!");
+    return true;
+  }
+  else{
+    alert("Usuario o contraseña incorrectos");
+    return false;
+  }
+}
