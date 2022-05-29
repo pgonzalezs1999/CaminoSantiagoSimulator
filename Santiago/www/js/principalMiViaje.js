@@ -29,42 +29,42 @@ if(res1=="0" && res2=="0" && res3=="0")
 
 if(a1 == "1")
 {
-    anadirFavoritos("img/albergue01.jpg", "Albergue A costa", "Ribadesella, Asturias");
+    anadirFavoritos("albergueInicio1.html", "img/albergue01.jpg", "Albergue A costa", "Ribadesella, Asturias");
 }
 if(a2 == "1")
 {
-    anadirFavoritos("img/albergue02.jpg", "Albergue do Cebreiro", "Lugo, Galicia");
+    anadirFavoritos("albergueInicio2.html", "img/albergue02.jpg", "Albergue do Cebreiro", "Lugo, Galicia");
 }
 if(a3 == "1")
 {
-    anadirFavoritos("img/albergue03.jpg", "Albergue Carmen Ramos", "Lugo, Galicia");
+    anadirFavoritos("albergueInicio4.html", "img/albergue03.jpg", "Albergue Carmen Ramos", "Lugo, Galicia");
 }
 if(m1 == "1")
 {
-    anadirFavoritos("img/mirador01.jpg", "Mirador Praias do Mar", "A Coruña, Galicia");
+    anadirFavoritos("albergueInicio3.html", "img/mirador01.jpg", "Mirador Praias do Mar", "A Coruña, Galicia");
 }
 if(m2 == "1")
 {
-    anadirFavoritos("img/mirador02.jpg", "Mirador Santiago Plaza", "Santiago, Galicia");
+    anadirFavoritos("albergueInicio5.html", "img/mirador02.jpg", "Mirador Santiago Plaza", "Santiago, Galicia");
 }
 if(res1 == "1")
 {
-    anadirReservas("img/albergue01.jpg", "Albergue A costa", "Ribadesella, Asturias");
+    anadirReservas("albergueInicio1.html", "img/albergue01.jpg", "Albergue A costa", "Ribadesella, Asturias");
 }
 if(res2 == "1")
 {
-    anadirReservas("img/albergue02.jpg", "Albergue do Cebreiro", "Lugo, Galicia");
+    anadirReservas("albergueInicio2.html", "img/albergue02.jpg", "Albergue do Cebreiro", "Lugo, Galicia");
 }
 if(res3 == "1")
 {
-    anadirReservas("img/albergue03.jpg", "Albergue Carmen Ramos", "Lugo, Galicia");
+    anadirReservas("albergueInicio4.html", "img/albergue03.jpg", "Albergue Carmen Ramos", "Lugo, Galicia");
 }
 
-function anadirReservas(ruta, nombre, ubicacion)
+function anadirReservas(ruta, imagen, nombre, ubicacion)
 {
     let output = '';
-    output += '<a href="albergueInicio.html" class="tarjetaSitio">';
-    output += '<img class="imagenSitio" src="' + ruta + '" alt="Imagen del sitio">';
+    output += '<a href="' + ruta + '" class="tarjetaSitio">';
+    output += '<img class="imagenSitio" src="' + imagen + '" alt="Imagen del sitio">';
     output += '<div class="infoSitio">';
     output += '<p>' + nombre + '</p>';
     output += '<p>' + ubicacion + '</p>';
@@ -74,11 +74,11 @@ function anadirReservas(ruta, nombre, ubicacion)
     $('#reservas').append(output);
 }
 
-function anadirFavoritos(ruta, nombre, ubicacion)
+function anadirFavoritos(ruta, imagen, nombre, ubicacion)
 {
     let output = '';
-    output += '<a href="albergueInicio.html" class="tarjetaSitio">';
-    output += '<img class="imagenSitio" src="' + ruta + '" alt="Imagen del sitio">';
+    output += '<a href="' + ruta + '" class="tarjetaSitio">';
+    output += '<img class="imagenSitio" src="' + imagen + '" alt="Imagen del sitio">';
     output += '<div class="infoSitio">';
     output += '<p>' + nombre + '</p>';
     output += '<p>' + ubicacion + '</p>';
