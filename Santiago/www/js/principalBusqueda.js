@@ -31,43 +31,35 @@ let m5 = L.marker([long + 0.06, lat + 0.06]);
 m5.bindPopup(L.popup({maxWidth:500}).setContent("Mirador Praias do Mar"));
 m5.addTo(map);
 
-$(document).ready(function() {
-    $.getJSON('lugares.json', function(lugares) {
-        let resultado = JSON.stringify(lugares);
-        resultado += ',' +
-            '{' +
-            '"id":6,' +
-            '"nombre":"aaaaaaaaaaaaaaaaa",' +
-            '"ubicacion":"aaaaaaaaaaaaaaaaaa",' +
-            '"foto":"mirador02.jpg",' +
-            '"fecha_reserva":"aaaaaaaaaaa",' +
-            '"favorito":1,' +
-            '"reservado":1' +
-            '}';
-        
-        let myJSON = JSON.stringify(resultado);
-        localStorage.setItem("lugares", myJSON);
+console.log("a1: " + getCookie("a1"));
+console.log("a2: " + getCookie("a2"));
+console.log("a3: " + getCookie("a3"));
+console.log("m1: " + getCookie("m1"));
+console.log("m2: " + getCookie("m2"));
 
-        console.log(myJSON);
-    });
-});
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
 
-$(document).ready(function() {
-    $.getJSON('lugares.json', function(lugares) {
-        texto = lugares;
-        var output ="";
-        lista = lugares.lugares;
-        $.each(lista, function(key, val) {
-            output += '<a href="albergueInicio.html" class="tarjetaSitio">';
-            output += '<img class="imagenSitio" src="img/' + val.foto + '" alt="Imagen del sitio">'; 
-            output += '<div class="infoSitio">'; 
-            output +='<p>' + val.nombre + '</p>'; 
-            output +='<p>' + val.ubicacion + '</p>';
-            output +='<img src="img/valoracion.png" alt="Valoración">';
-            output +='</div>';
-            output +='</a>';
-        });
-        output += '<div class="margenInferior"></div>';
-        $('body').append(output);
-    });
-});
+function getCookie(cname)
+{
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++)
+    {
+        let c = ca[i];
+        while (c.charAt(0) == ' ')
+        {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0)
+        {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}

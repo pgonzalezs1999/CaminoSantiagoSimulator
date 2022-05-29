@@ -1,7 +1,7 @@
 .logoLogin
 {
     margin-top: 15vw;
-    margin-bottom: 15vw;
+    margin-bottom: 7vw;
 }
 
 .opcionesLogin
@@ -19,4 +19,12 @@ footer
     right: 0%;
     left: 0%;
     margin-bottom: 20px;
+}
+
+#p
+{
+    width: 80%;
+    margin: auto;
+    color: #CC0000;
+    font-size: medium;
 }

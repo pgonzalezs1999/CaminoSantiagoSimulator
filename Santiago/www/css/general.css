@@ -13,7 +13,7 @@ header, body, footer
     margin: 0px;
 }
 
-h1, .formDiv, p, button, a
+h1, .formDiv, p, button, a, form
 {
     font-family: 'Baloo Bhaijaan 2', cursive;
 }
@@ -170,4 +170,14 @@ button a
 .infoComentario
 {
     flex: 4;
+}
+
+.formBox
+{
+    margin-bottom: 3vw;
+}
+
+.favoritos .tarjetaSitio .infoSitio, .reservas .tarjetaSitio .infoSitio
+{
+    padding-bottom: 10px;
 }

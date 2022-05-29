@@ -15,27 +15,30 @@
         <script src="jquery-3.3.1.min.js"></script>
     </head>
     <header>
-        <img class="fotoPrincipal" src="img/albergue01.jpg" alt="Foto principal del albergue">
-        <a href="principalBusqueda.html" class="volver sobreImagenes"><img src="img/flechaIzquierda.png" alt="Volver"></a>
-        <img class="favorito sobreImagenes" src="img/corazonVacio.png" alt="Favorito">
+        <img class="fotoPrincipal" src="img/mirador01.jpg" alt="Foto principal del albergue">
+        <div class="contenedorSobreImagenes">
+            <a href="principalBusqueda.html"><img src="img/flechaIzquierda.png" alt="Volver"></a>
+            <button class="botonDisimulado" onclick="toogleFavorito()">
+                <img src="img/corazonVacio.png" id="corazonFavorito" alt="Favorito">
+            </button>
+        </div>
         <div class="suavizadoNombre">
-            <p>Albergue A costa</p>
+            <p id="elector">Mirador Praias do Mar</p>
         </div>
     </header>
     <body>
         <p class="tituloInfo"><b>Descripción: </b></p>
-        <p class="contenidoInfo">Albergue en Ribadesella, a comienzos de Asturias. Hay un Mercadona a dos manzanas. Contamos con Wi-fi y cocina completa. No aceptamos mascotas</p>
+        <p class="contenidoInfo">El mirador favorito de los peregrinos, con excelentes vistas a los acantilados de Galicia. Recomendamos visitarlo temprano para disfrutar de él con menos turistas.</p>
         <p class="tituloInfo"><b>Ubicación: </b></p>
-        <button class="contenidoInfo direccion">Calle de Dionisio Ruisánchez, 43, Ribadesella, Asturias (Spain)</button>
+        <button class="contenidoInfo direccion">Arroyo de San Juan. A Coruña, Galicia (Spain)</button>
         <div class="flexInfo">
             <p><b>Precio: </b></p>
-            <p>12€ / noche</p>
+            <p>Gratuito</p>
         </div>
         <div class="flexInfo">
             <p><b>Valoración: </b></p>
             <p><img class="valoracion" src="img/valoracion.png" alt="Valoración"></p>
         </div>
-        <button onclick="abrirCalendario()">Reservar</button>
         <div class="formDiv">Añadir un comentario</div>
         <h2><b>Comentarios de quienes reservaron:</b></h2>
         <div class="flexComentario">
@@ -44,7 +47,7 @@
             </div>
             <div class="infoComentario">
                 <p><b>Pablo González</b></p>
-                <p>En las fotos parece que está en muy mal estado, pero en verdad está bien conservado</p>
+                <p>Vistas increíbles. 100% recomendable</p>
             </div>
         </div>
         <div class="flexComentario">
@@ -53,7 +56,7 @@
             </div>
             <div class="infoComentario">
                 <p><b>Gloria Alonso</b></p>
-                <p>Muy barato y muy bien situado, pero el recepcionista fue muy antipático conmigo</p>
+                <p>No paséis sin visitarlo. Es de los mejores paisajes que he visto en mucho tiempo</p>
             </div>
         </div>
         <div class="flexComentario">
@@ -62,7 +65,7 @@
             </div>
             <div class="infoComentario">
                 <p><b>Laura Estévez</b></p>
-                <p>Elegí este albergue a pesar de que tenía que desviarme de mi ruta porque ví que tenía muy buenas valoraciones, pero cuando llegué vi que no corresponde con los comentarios. No lo recomiendo</p>
+                <p>No es para tanto...</p>
             </div>
         </div>
         <div class="flexComentario">
@@ -71,7 +74,7 @@
             </div>
             <div class="infoComentario">
                 <p><b>Santiago Barreiro</b></p>
-                <p>Buen buena atención y todo muy limpio!</p>
+                <p>Me encantó. Muy bien conservado pese a la cantidad de turistas que hay</p>
             </div>
         </div>
         <div class="margenInferior"></div>
@@ -81,61 +84,5 @@
         <a class="opcionNav" href="principalBusqueda.html"><img src="img/lupa.png" alt="Buscador"></a>
         <a class="opcionNav" href="principalPerfil.html"><img src="img/profile.png" alt="Perfil"></a>
     </nav>
-    <div class="calendario">
-        <div class="mes">
-            <div class="anterior">&#10094;</div>
-            <div>Agosto<br><span style="font-size:18px">2021</span></div>
-            <div class="siguiente">&#10095;</div>
-        </div>
-        <ul class="semana">
-            <li>L</li>
-            <li>M</li>
-            <li>X</li>
-            <li>J</li>
-            <li>V</li>
-            <li>S</li>
-            <li>D</li>
-        </ul>
-        <a href="pasarelaPago.html">
-            <ul class="dias">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
-                <li>9</li>
-                <li><span class="active">10</span></li>
-                <li>11</li>
-                <li>12</li>
-                <li>13</li>
-                <li>14</li>
-                <li>15</li>
-                <li>16</li>
-                <li>17</li>
-                <li>18</li>
-                <li>19</li>
-                <li>20</li>
-                <li>21</li>
-                <li>22</li>
-                <li>23</li>
-                <li>24</li>
-                <li>25</li>
-                <li>26</li>
-                <li>27</li>
-                <li>28</li>
-                <li>29</li>
-                <li>30</li>
-                <li>31</li>
-            </ul>
-        </a>
-        <button onclick="cerrarCalendario()">Cancelar</button>
-    </div>
     <script src="js/albergue.js"></script>
 </html>

@@ -14,23 +14,19 @@
         <h1>Iniciar sesión</h1>
     </header>
     <body>
-        <form action="validacion.html", id="miForm">
+        <form id="miForm">
             <label for="fname">Nombre de usuario: </label><br>
-            <input type="name" id="fname" name="nombre"><br>
+            <input type="name" class="formBox" id="fname" name="nombre"><br>
             <label for="lname">Contraseña: </label><br>
-            <input type="pass" id="lname" name="passw"><br>
-            <!-- <input class="botonGeneral" type="submit" value="Iniciar sesión" onclick="validar()">-->
+            <input type="pass" class="formBox" id="lname" name="passw"><br>
             <button onclick="validar()"><a id="link" href="#">Iniciar sesión</a></button>
           </form>
-        <!-- <div class="formDiv">Nombre de usuario</div>
-        <div class="formDiv">Contraseña</div>
-        <button><a href="principalBusqueda.html">Iniciar sesión</a></button> -->
+        <p id="p"></p>
     </body>
     <footer>
         <div>
-            <!-- <a class="listaVertical opcionesLogin" href="registro.html">Soy nuevo</a>
-            <a class="listaVertical opcionesLogin" href="index.html">No recuerdo mi contraseña</a>
-            <a class="listaVertical opcionesLogin" href="ayudaRegistro.html">Ayuda</a> -->
+            <a class="listaVertical opcionesLogin" href="registro.html">Soy nuevo</a>
+            <a class="listaVertical opcionesLogin" href="ayudaRegistro.html">Ayuda</a>
         </div>
     </footer>
     <script src="js/login.js"></script>
