@@ -16,15 +16,25 @@
         <h1>Registro de nuevo usuario</h1>
     </header>
     <body>
-        <div class="formDiv">Nombre de usuario</div>
-        <div class="formDiv">Nombre y apellidos</div>
-        <div class="formDiv">Correo electrónico</div>
-        <div class="formDiv">Edad</div>
-        <div class="formDiv">Contraseña</div>
-        <div class="formDiv">Confirmar contraseña</div>
+        <form id="miForm">
+            <label for="form1">Nombre de usuario: </label><br>
+            <input type="name" class="formBox" id="form1" name="nombre"><br>
+            <label for="form2">Nombre y apellidos: </label><br>
+            <input type="name" class="formBox" id="form2" name="passw"><br>
+            <label for="form3">Correo electrónico: </label><br>
+            <input type="name" class="formBox" id="form3" name="passw"><br>
+            <label for="form4">Edad: </label><br>
+            <input type="name" class="formBox" id="form4" name="passw"><br>
+            <label for="form5">Contraseña: </label><br>
+            <input type="pass" class="formBox" id="form5" name="passw"><br>
+            <label for="form6">Repetir contraseña: </label><br>
+            <input type="pass" class="formBox" id="form6" name="passw"><br>
+            <button onclick="validar()"><a id="link" href="#">Registrarme</a></button>
+        </form>
+        <p id="p"></p>
     </body>
     <footer>
-        <button><a href="principalBusqueda.html">Registrarme</a></button>
         <a style="display:block" href="login.html">Volver</a>
     </footer>
+    <script src="js/registro.js"></script>
 </html>

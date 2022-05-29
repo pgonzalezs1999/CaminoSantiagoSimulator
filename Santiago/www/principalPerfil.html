@@ -8,46 +8,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>PrincipalPerfil</title>
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/principalPerfil.css">
+        <link rel="stylesheet" href="css/general.css?rnd=534543">
     </head>
     <body>
-
-        <div class="grid">
-            <div class="contenedor c1">
-                <img class="fotoPerfil" src="img/profile1.jpg" alt="fotoPerfil">
+        <div style="display: flex; margin-bottom: 15vh;">
+            <div style="flex: 1; padding-left: 5vw; padding-right: 5vw;">
+                <img style="height: 180px; width: 180px;" class="fotoPerfil" src="img/profile1.jpg" alt="fotoPerfil">
             </div>
-            <div class="contenedor c2">
+            <div style="flex: 1;">
                 <div class="info">
-                    <p>Pablo <img src="img/pen.png" alt="pen"></p>
-                    <p>González Sánchez <img src="img/pen.png" alt="pen"></p>
-                    <p>Edad: 23 <img src="img/pen.png" alt="pen"></p>
+                    <div class="lineaDato">
+                        <p id="usern"></p>
+                        <img src="img/pen.png" alt="pen">
+                    </div>
+                    <div class="lineaDato">
+                        <p id="nombre"></p>
+                        <img src="img/pen.png" alt="pen">
+                    </div>
+                    <div class="lineaDato">
+                        <p id="edad"></p>
+                        <img src="img/pen.png" alt="pen">
+                    </div>
                 </div>
-            </div>
-            <div class="contenedor c3">
-                <div>
-                    <a href="historialReservas.html"><button>Reservas</button></a>
-                </div>
-                <div>
-                    <a href="historialComentarios.html"><button>Comentarios</button></a>
-                </div>
-            </div>
-            <div class="contenedor c4">
-                <div class="funcionalidades">
-                    <p><a href="ayudaPerfil.html"><img src="img/IconoAyuda.png" alt="ayuda"> Ayuda</a></p>
-                    <p><a href="login.html"><img src="img/IconoSD.png" alt="cerrarSesion"> Cerrar Sesion</a></p>
-                    <p><a href="login.html"><img src="img/IconoBaja.png" alt="Baja"> Darse de Baja</a></p>
-                </div>
-            </div>
-            <div class="contenedor c5">
-                <img class="logoPerfil" src="img/ikiwayLogo.png" alt="logoPerfil">
             </div>
         </div>
-
+        <a href="historialReservas.html"><button>Reservas</button></a>
+        <div style="display: flex; margin-top: 25vh;">
+            <div class="funcionalidades" style="flex: 5;">
+                <p><a href="ayudaPerfil.html"><img src="img/IconoAyuda.png" alt="ayuda"> Ayuda</a></p>
+                <p><a href="login.html"><img src="img/IconoSD.png" alt="cerrarSesion"> Cerrar Sesion</a></p>
+                <p><a href="login.html"><img src="img/IconoBaja.png" alt="Baja"> Dar de Baja</a></p>
+            </div>
+            <img style="flex: 1; margin-right: 10vw; width: 100px; height: 100px;" class="logoPerfil" src="img/ikiwayLogo.png" alt="logoPerfil">
+        </div>
     </body>
     <nav class="navegacion">
         <a class="opcionNav" href="principalMiViaje.html"><img src="img/hiking.png" alt="Mi viaje"></a>
         <a class="opcionNav" href="principalBusqueda.html"><img src="img/lupa.png" alt="Buscador"></a>
         <a class="opcionNav" href="principalPerfil.html"><img src="img/profile.png" alt="Perfil"></a>
     </nav>
+    <script src="js/perfil.js"></script>
 </html>

@@ -181,3 +181,22 @@ button a
 {
     padding-bottom: 10px;
 }
+
+.lineaDato
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.lineaDato p
+{
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.lineaDato img
+{
+    height: 15px;
+}
