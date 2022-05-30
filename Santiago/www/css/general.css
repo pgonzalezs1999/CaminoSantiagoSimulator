@@ -15,7 +15,7 @@ header, body, footer
 
 h1, .formDiv, p, button, a, form
 {
-    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-family: 'Baloo Bhaijaan 2';
 }
 
 .flex
@@ -199,4 +199,39 @@ button a
 .lineaDato img
 {
     height: 15px;
+}
+
+.rcFondo
+{
+    width: 80vw;
+    height: 80vh;
+    margin-left: 10vw;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.rcFoto
+{
+    margin: auto;
+    width: 50vw;
+    object-fit: contain;
+    margin-bottom: 10vh;
+}
+
+.rcFoto img
+{
+    object-fit: contain;
+}
+
+.rcTexto
+{
+    font-size: larger;
+}
+
+.fvolver
+{
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    padding: 5vw;
 }

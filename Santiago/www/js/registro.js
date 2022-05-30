@@ -24,11 +24,12 @@ function validar()
               {
                 if(pass1 == pass2)
                 {
-                  document.getElementById("link").href = "login.html";
-                  ruta = "principalBusqueda.html";
+                  document.getElementById("link").href = "registroCorrecto.html";
                   setCookie("nuevoUsername", username, 100);
-                  setCookie("nuevoPassword", pass1, 100);
+                  setCookie("nuevoNombre", nombre, 100);
+                  setCookie("nuevoCorreo", correo, 100);
                   setCookie("nuevaEdad", edad, 100);
+                  setCookie("nuevoPassword", pass1, 100);
                 }
                 else { devolverError("La contraseña y la confirmación no coinciden"); }
               }

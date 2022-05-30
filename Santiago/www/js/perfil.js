@@ -2,7 +2,7 @@ let p1 = document.getElementById("usern");
 let p2 = document.getElementById("nombre");
 let p3 = document.getElementById("edad");
 let texto1 = document.createTextNode(getCookie("nuevoUsername"));
-let texto2 = document.createTextNode(getCookie("nuevoPassword"));
+let texto2 = document.createTextNode(getCookie("nuevoNombre"));
 let texto3 = document.createTextNode(getCookie("nuevaEdad"));
 p1.appendChild(texto1);
 p2.appendChild(texto2);
