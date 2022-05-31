@@ -27,7 +27,7 @@ function validar()
     if(avisado == false)
     {
       let p = document.getElementById("p");
-      let texto = document.createTextNode("Nombre de ususario o contraseña incorrectos");
+      let texto = document.createTextNode("Nombre de usuario o contraseña incorrectos");
       p.appendChild(texto);
       avisado = true;
     }
